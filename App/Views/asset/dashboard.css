@@ -1,0 +1,44 @@
+
+.block_header_right div div.connect{
+    display: block;
+
+}
+
+.connect span div a{
+    text-decoration: none;
+}
+
+/* .block_header_right div div.connect nav ul :hover {
+    display: block;
+} */
+
+.block_header_right div div.connect nav ul li{
+    padding: 10px;
+}
+
+.block_header_right div .connect span div#block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.block_header_right div .connect span div#block p{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px;
+}
+#con-decon>ul{
+    display: none;
+}
+
+.block_header_right>form{
+    display: none;
+}
+
+.scroll_menu{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding-top: 2px;
+}
+

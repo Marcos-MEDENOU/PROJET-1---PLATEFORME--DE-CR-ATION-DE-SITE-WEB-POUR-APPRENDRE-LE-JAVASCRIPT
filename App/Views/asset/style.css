@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    border-radius: 10px;
+}
+body{
+    background-color: #060505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+.block_formulaire{
+    display: flex;
+    padding: 35px;
+    width: fit-content;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 auto;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(73, 71, 71);
+    border-radius:5px;
+    --border-size: 2px;
+        --border-angle: 0turn;
+        width: fit-content;
+        height: fit-content;
+        background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, rgb(8, 245, 55), rgb(244, 244, 17));
+        background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-animation: bg-spin 3s linear infinite;
+        animation: bg-spin 6s linear infinite;
+}
+
+.block_formulaire h1{
+    color: white;
+}
+
+form input{
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: transparent;
+    border-color: white;
+    padding-left: 15px;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+p a{
+    color: rgb(12, 222, 250);
+}
+form button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 49%;
+    background-color:transparent;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+}
+
+span{
+    text-align: left;
+    color: white;
+}
+
+@-webkit-keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+.box:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@property  --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+button >a {
+    text-decoration: none;
+    color: green;
+}

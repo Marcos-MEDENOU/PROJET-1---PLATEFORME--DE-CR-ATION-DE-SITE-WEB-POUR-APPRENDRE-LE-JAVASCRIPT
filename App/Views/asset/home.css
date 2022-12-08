@@ -1,0 +1,302 @@
+@font-face {
+    font-family: Cormorant-Regular;
+    src: url('../assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+
+@font-face {
+    font-family: Cormorant-Italic;
+    src: url('../assets/fonts/Cormorant_Garamond/CormorantGaramond-Italic.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url('../assets/fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Italic;
+    src: url('../assets/fonts/Raleway/static/Raleway-Italic.ttf');
+}
+
+.block_capture{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    width: 95%;
+}
+
+
+#text_capture{
+    font-size: 3rem;
+    font-family: Cormorant-Regular;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.block_text{
+    width: 92%;
+    height:300px;
+}
+
+.block_text form{
+    text-align: center;
+}
+.block_capture .block_text form input{
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: transparent;
+    height: 50px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 5px;
+}
+.text-left button{
+    background-color: transparent;
+        border-color: white;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-top: 20px;
+        font-family: Cormorant-Italic;
+        border-radius: 15px;
+}
+
+.text-left{
+    margin: 0 auto;
+    text-align: center;
+}
+.block_capture .block_text form button{
+    color: white;
+        margin-top: 30px;
+        background-color: transparent;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 7px;
+        padding: 5px;
+        background-color: transparent;
+        margin-left: 5px;
+}
+
+.OR{
+    height: 80px;
+    padding-left: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.github-block{
+    font-family: Raleway-Regular;
+    position: relative;
+}
+
+.github-block span{
+    font-size: 1.5rem;
+}
+
+.github-block svg {
+    position: absolute;
+    margin-left: 10px;
+    bottom: 10%;
+}
+
+.block_exercices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.block_exercices span{
+    font-size: 2.5rem;
+    font-family: Cormorant-Italic;
+    text-align: center;
+}
+
+.JScode_and_text{
+    margin-top: 200px;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+
+.JScode_and_text p{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Cormorant-Italic;
+}
+.text_exercices_and_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text_exercices_and_button>button{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: Cormorant-Italic;
+    border-radius: 15px;
+}
+.animation-ctn {
+    text-align: center;
+    margin-top: 5em;
+    position: absolute;
+    top: -180px;
+    left:44%;
+    display: none;
+}
+#svg{
+    width: 20px;
+}
+@-webkit-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 100px
+    }
+
+    100% {
+        stroke-dashoffset: 200px
+    }
+}
+
+@-ms-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 100px
+    }
+
+    100% {
+        stroke-dashoffset: 200px
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 100px
+    }
+
+    100% {
+        stroke-dashoffset: 0px
+    }
+}
+
+@-webkit-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 480px
+    }
+
+    100% {
+        stroke-dashoffset: 960px;
+
+    }
+}
+
+@-ms-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 480px
+    }
+
+    100% {
+        stroke-dashoffset: 960px
+    }
+}
+
+@keyframes colored-circle {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 100
+    }
+}
+
+/* other styles */
+/* .svg svg {
+    display: none
+}
+ */
+.inlinesvg .svg svg {
+    display: inline
+}
+
+/* .svg img {
+    display: none
+} */
+
+.icon--order-success svg polyline {
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards
+}
+
+.icon--order-success svg circle {
+    -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+    animation: checkmark-circle 0.6s ease-in-out backwards;
+}
+
+.icon--order-success svg circle#colored {
+    -webkit-animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+    animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+}
+
+.sponsoried{
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    border: 5px solid rgb(56, 55, 55);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 20px;
+    width: 90%;
+    position: relative;
+}
+.sponsoried > p{
+    font-size:  2rem;
+    font-family: Cormorant-Italic;
+    text-align: center;
+    /* margin-left: 70px;  */
+}
+/* .sponsoried img{
+    /* position: absolute;
+    left: 0;
+    bottom: -67px;
+    margin-top: 20px;
+    right: 50%;
+    text-align: center; 
+} */
+.svg_animé{
+    position: relative;
+    margin-left: 500px;
+}
+
+
+.code{
+    margin-top: 100px;
+    text-align: right;
+}
